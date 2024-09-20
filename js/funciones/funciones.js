@@ -176,14 +176,13 @@ const principal = () => {
     let ejemplos = document.querySelector("#ejemplos");
 
     //API
-    const apiURL = './api.json';
+    const apiURL = '../../datos/api.json';
 
     fetch(apiURL)
     .then(respuesta => respuesta.json())
     .then(datos => {
         datos.forEach(constantes => {
             ejemplos.innerHTML += `<p>a: ${constantes.a} | b: ${constantes.b} | c: ${constantes.c} |</p>`;
-            console.log(ejemplos.innerHTML);
         });
     })
     .catch(error => {
