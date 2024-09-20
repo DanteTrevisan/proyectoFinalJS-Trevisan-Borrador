@@ -176,7 +176,7 @@ const principal = () => {
     let ejemplos = document.querySelector("#ejemplos");
 
     //API
-    const apiURL = '../api/api.json';
+    const apiURL = '/api/api.json';
     console.log(apiURL);
 
     fetch(apiURL)
