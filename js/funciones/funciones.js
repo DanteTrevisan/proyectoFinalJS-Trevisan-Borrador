@@ -176,7 +176,7 @@ const principal = () => {
     let ejemplos = document.querySelector("#ejemplos");
 
     //API
-    const apiURL = 'proyectofinaljs-trevisan/datos/api.js';
+    const apiURL = 'proyectofinaljs-trevisan/datos/api.json';
 
     fetch(apiURL)
     .then(respuesta => respuesta.json())
